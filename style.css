@@ -101,4 +101,133 @@ p{
 #c3:checked ~ .flip-book #p3{
   transform: rotateY(-180deg);
   z-index: 3;
+
+
+
+  button {
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font-size: 16px;
+  }
+  
+  canvas {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 1000%;
+  }
+  #pinkboard {
+    width: 800px;  /* Chỉnh sửa theo kích thước mong muốn */
+    height: 600px; /* Chỉnh sửa theo kích thước mong muốn */
+  }
+  #show-heart {
+    background-color: #ff69b4; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    padding: 10px 20px; /* Độ lớn của nút */
+    border: none; /* Bỏ viền */
+    cursor: pointer; /* Hiển thị con trỏ tay khi di chuột vào nút */
+    font-size: 16px; /* Cỡ chữ */
+  }
+/* }
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.851);
 }
+
+#heart-container, #book-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.flip-book {
+  display: flex;
+  flex-direction: column;
+}
+
+.flip {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .back {
+  display: block;
+}
+
+input[type="checkbox"]:checked ~ .front {
+  display: none;
+}
+
+.next-btn, .back-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ff4081;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.next-btn:hover, .back-btn:hover {
+  background: #ff79a8;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff79a8;
+} */
